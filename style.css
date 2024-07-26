@@ -18,9 +18,17 @@ body{
     padding: 20px 10%;
     background: #081b29;;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+}
+@media only screen and (max-width:480px)
+{
+    .header{
+        padding: 10px 6%;
+
+    }
 }
 .logo{
     position: relative;
@@ -34,6 +42,14 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* opacity: 0;
     animation: slideRight 1s ease forwards;  */
+}
+
+@media only screen and (max-width:480px)
+{
+.logo{
+    font-size: 25px;
+}
+
 }
 .logo:hover{
     color: #0ef;
@@ -53,6 +69,13 @@ body{
     /* opacity:0;
     animation: slideTop 0.5s ease forwards; */
 }
+
+@media only screen and (max-width:480px)
+{
+    .navbar a{
+        margin-left: 25px;
+    }
+}
 .navbar a:hover{
     color: #0ef;
 }
@@ -61,23 +84,76 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background:url(./img/1.png) no-repeat ;
+    /* background:url(./img/1.png) no-repeat ;
     background-size: cover;
-    background-position: center;
-    display: flex;
+    background-position: center; */
+     display: flex; 
+     justify-content:space-between;
+     flex-wrap: nowrap;
+
     align-items: center;
     padding: 70px 10% 0;
 }
+
+@media only screen and (max-width:480px)
+{
+    .home{
+        padding:45px 5% 0;
+        gap: 50px;
+        display: flex; 
+        justify-content:space-between;
+        
+    }
+}
+
+.home_img img{
+    height: 400px;
+    border-radius: 20px;
+    margin-right: 150px;
+    margin-left: 80px;
+    box-shadow: 2px 2px 50px #0ef;
+}
+@media only screen and (max-width:480px){
+
+    .home_img img{
+        height: 300px;
+        border-radius: 20px;
+        margin-right: 100px;
+        box-shadow: 2px 2px 50px #0ef;
+    }
+
+}
+
 .home-content{
     max-width: 600px;
+}
+@media only screen and (max-width:480px)
+{
+    .home-content{
+    width:400px;
+    }
 }
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
 }
+@media only screen and (max-width:480px)
+{
+    .home-content h3{
+        font-size: 25px;
+    }
+
+}
 .home-content h3:nth-of-type(2)
 {
     margin-bottom: 30px;
+}
+@media only screen and (max-width:480px)
+{
+    .home-content h3:nth-of-type(2)
+{
+    margin-bottom: 15px;
+}
 }
 .home-content h3 span{
     color:#0ef ;
@@ -87,6 +163,13 @@ body{
     font-weight: 700;
     margin: -3px 0 ;
 }
+@media only screen and (max-width:480px)
+{
+    .home-content h1{
+        font-size: 36px;
+    }
+}
+
 .home-content p{
     font-size: 20px;
 }
@@ -189,6 +272,27 @@ body{
     font-size: 20px;
     
  }
+ @media only screen and (max-width:480px)
+ {
+    .container1{
+        border: 2px solid #0ef;
+        padding: 20px;
+        border-radius: 10px;
+        width: 185%;
+        font-size: 20px;
+        
+     }
+     .sk .sub-title{
+        margin-left: 235px;
+     }
+     .flex{
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+     }
+     
+
+ }
  .flex{
     display: flex;
     justify-content: center;
@@ -203,7 +307,14 @@ body{
     height: 300px;
     filter: drop-shadow(10px 5px 10px #0ef);
 }
-
+@media only screen and (max-width:480px){
+    .projects{
+        margin-left: 235px;
+    }
+    .certificates{
+        margin-left: 235px;
+    }
+}
 .project_title{
     font-size: large;
     text-align: center;
@@ -214,7 +325,7 @@ body{
 }
 .projects_flex{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 120px;
@@ -232,8 +343,8 @@ body{
  }
  .certificates_flex{
     display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
  }
  .certificates_card img:hover{
@@ -246,9 +357,16 @@ body{
     text-align: center;
     margin-bottom: 10px;
  }
+ @media only screen and (max-width:480px)
+ {
+    .contact h2{
+    margin-left: 200px;
+    }
+ }
  .contact form{
     width: 600px;
     text-align: center;
+    margin-left: 30px;
  }
  form .input-box{
     display: flex;
@@ -305,3 +423,5 @@ form .textarea-field .error-text{
  form button:hover{
     box-shadow: none;
  }
+
+
